@@ -4,10 +4,10 @@
   <Version>1.0.0.0</Version>
   <ProviderName>FlowMail</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
-  <DisplayName DefaultValue="FlowMail"/>
+  <DisplayName DefaultValue="FLowMail"/>
   <Description DefaultValue="A template to get started."/> 
-  <IconUrl DefaultValue="https://localhost:4001/assets/FlowMail_logo.png"/>
-  <HighResolutionIconUrl DefaultValue="https://localhost:4001/assets/FlowMail_logo.png"/>
+  <IconUrl DefaultValue="https://localhost:3001/assets/FlowMail_logo.png"/>
+  <HighResolutionIconUrl DefaultValue="https://localhost:3001/assets/FlowMail_logo.png"/>
   <SupportUrl DefaultValue="https://www.contoso.com/help"/>
   <AppDomains>
     <AppDomain>https://www.contoso.com</AppDomain>
@@ -23,7 +23,7 @@
    <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
-        <SourceLocation DefaultValue="https://localhost:4001/taskpane.html"/>
+        <SourceLocation DefaultValue="https://localhost:3001/taskpane.html"/>
         <RequestedHeight>250</RequestedHeight>
       </DesktopSettings>
     </Form>
@@ -48,7 +48,7 @@
             <OfficeTab id="TabDefault">
               <Group id="msgComposeCmdGroup">
                 <Label resid="GroupLabel"/>
-                <Control xsi:type="Button" id="msgComposeInsertTemplate">
+                <Control xsi:type="Button" id="msgComposeFlowMail">
                   <Label resid="TaskpaneButton.Label"/>
                   <Supertip>
                     <Title resid="TaskpaneButton.Title"/>
@@ -63,7 +63,7 @@
                     <SourceLocation resid="Taskpane.Url"/>
                   </Action>
                 </Control>
-                <Control xsi:type="Button" id="msgComposeGetSuggestions">
+                <Control xsi:type="Button" id="msgComposeInsertTemplate">
                   <Label resid="FunctionButton.Label"/>
                   <Supertip>
                     <Title resid="FunctionButton.Title"/>
@@ -75,7 +75,7 @@
                     <bt:Image size="80" resid="Icon.80x80"/>
                   </Icon>
                   <Action xsi:type="ExecuteFunction">
-                    <FunctionName>Get Suggestions</FunctionName>
+                    <FunctionName>insertDefaultGist</FunctionName>
                   </Action>
                 </Control>
               </Group>
@@ -86,13 +86,13 @@
     </Hosts>
         <Resources>
         <bt:Images>
-          <bt:Image id="Icon.16x16" DefaultValue="https://localhost:4001/assets/icon-16.png"/>
-          <bt:Image id="Icon.32x32" DefaultValue="https://localhost:4001/assets/icon-32.png"/>
-          <bt:Image id="Icon.80x80" DefaultValue="https://localhost:4001/assets/icon-80.png"/>
+          <bt:Image id="Icon.16x16" DefaultValue="https://localhost:3001/assets/icon-16.png"/>
+          <bt:Image id="Icon.32x32" DefaultValue="https://localhost:3001/assets/icon-32.png"/>
+          <bt:Image id="Icon.80x80" DefaultValue="https://localhost:3001/assets/icon-80.png"/>
         </bt:Images>
         <bt:Urls>
-          <bt:Url id="Commands.Url" DefaultValue="https://localhost:4001/commands.html"/>
-          <bt:Url id="Taskpane.Url" DefaultValue="https://localhost:4001/taskpane.html"/>
+          <bt:Url id="Commands.Url" DefaultValue="https://localhost:3001/commands.html"/>
+          <bt:Url id="Taskpane.Url" DefaultValue="https://localhost:3001/taskpane.html"/>
         </bt:Urls>
         <bt:ShortStrings>
           <bt:String id="GroupLabel" DefaultValue="FlowMail"/>

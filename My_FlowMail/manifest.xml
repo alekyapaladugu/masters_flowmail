@@ -98,8 +98,8 @@
           <bt:String id="GroupLabel" DefaultValue="FlowMail"/>
           <bt:String id="TaskpaneButton.Label" DefaultValue="Insert Template"/>
           <bt:String id="TaskpaneButton.Title" DefaultValue="Insert Template"/>
-          <bt:String id="FunctionButton.Label" DefaultValue="Insert default gist"/>
-          <bt:String id="FunctionButton.Title" DefaultValue="Insert default gist"/>
+          <bt:String id="FunctionButton.Label" DefaultValue="Email Checker"/>
+          <bt:String id="FunctionButton.Title" DefaultValue="Email Checker"/>
         </bt:ShortStrings>
         <bt:LongStrings>
           <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Displays a list of your templates and allows you to insert their contents into the current message."/>
